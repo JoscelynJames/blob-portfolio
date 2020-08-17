@@ -1,0 +1,112 @@
+/* ################# Colors #################
+  light periwinkle #DCE4FD
+  mid periwinkle #DCE4FD
+  periwinkle #7994FF
+  orange #FF512B
+  light orange #FF9473
+  hot pink #FFB8FF 
+ */
+body {
+  background: #dce4fd;
+  font-family: "Baloo Tamma 2", cursive;
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  color: #424242;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+p {
+  font-size: 18px;
+  margin: 4px 16px;
+  font-weight: 500;
+}
+
+svg {
+  fill: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  background: none;
+  border: none;
+  width: 80px;
+}
+
+a > svg {
+  width: 100%;
+}
+
+path, g {
+  transform-origin: 50% 50%;
+}
+
+.tech-stack {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.background-blob {
+  position: fixed;
+  width: 80%;
+  z-index: -1;
+}
+
+.background-blob > svg {
+  opacity: 0.6;
+}
+
+.blob-button-hover-state:hover {
+  filter: url(#filter0_d);
+}
+
+/* ################# SVG Icons ################# */
+
+#linkedin-icon > path {
+  transform: translateY(99px) translateX(140px) scale(2.5);
+}
+
+#medium-icon > path {
+  transform: translateX(150px) translateY(100px) scale(2.5);
+}
+
+#github-icon > path {
+  transform: translateX(145px) translateY(100px) scale(2.5);
+}
+
+#code-pen-icon {
+  transform: translateX(15px) translateY(-7px) scale(0.55) ;
+}
+
+/* ################# Media Queries ################# */
+@media only screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main {
+    height: auto;
+  }
+
+  section,
+  .blog-container {
+    padding: 36px;
+  }
+}
